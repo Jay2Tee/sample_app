@@ -1,7 +1,6 @@
-== Welcome to Rails
+# Learning Rails
 
-# Ruby on Rails Tutuorial: sample application
-
-This is the sample application for 
-[*Ruby on Rails Tutorial: Learn Rails by Example*] (http://railstutorial.org/)
-by [Michael Hartl] (http://michaelhartl.com).
+This is a work in progress through tutorials online starting with Learn Rails by Example by Michael Hartl 
+to end up with
+[*A famous clone*] (http://red-tie.com/)
+by [Jamie Thomson] (http://red-tie.com).

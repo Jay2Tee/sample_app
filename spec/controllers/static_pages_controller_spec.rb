@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PagesController do
+describe StaticPagesController do
   render_views
 
   before(:each) do
@@ -46,6 +46,7 @@ describe PagesController do
       response.should have_selector("title", :content => @base_title + " | About")
     end
   end
+
   describe "GET 'help'" do
     it "returns http success" do
       get 'help'
@@ -57,5 +58,4 @@ describe PagesController do
       response.should have_selector("title", :content => @base_title + " | Help")
     end
   end
-
 end
