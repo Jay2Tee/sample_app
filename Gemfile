@@ -8,7 +8,9 @@ gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.12.2'
+  gem 'rspec-rails', '2.13.0'
+  gem 'capybara', '2.0.2'
+  gem 'webrat', '0.7.3'
 end
 
 group :production do
@@ -30,9 +32,10 @@ end
 
 group :test do
 	# gem 'rspec', '2.12.0'
-	gem 'webrat', '0.7.3'
+	# gem 'webrat', '0.7.3'
   gem 'spork', '0.9.2'
-  gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '4.1.0'
+  
 end
 
 gem 'jquery-rails', '2.0.2'

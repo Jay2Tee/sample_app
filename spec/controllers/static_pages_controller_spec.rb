@@ -19,7 +19,13 @@ describe StaticPagesController do
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
-                                    :content => @base_title + " | Home")
+                                    :content => @base_title)
+    end
+
+    it "should not have a custom page title" do
+      get 'home'
+      response.should_not have_selector('title',
+                                    :text => ' | Home')
     end
   end
 

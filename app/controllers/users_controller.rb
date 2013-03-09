@@ -5,6 +5,18 @@ class UsersController < ApplicationController
   end
 
   def new
-  	@title = "Sign Up"
+  	@user = User.new
+  end
+
+  def create
+  	@user = User.new(params[:user])
+  	if @user.save
+  		# Handle a successful save.
+      flash[:success] = "Welcome to the Jamitter!"
+      redirect_to @user
+  	else
+  		# Render the login page again.
+  		render 'new'
+  	end
   end
 end
